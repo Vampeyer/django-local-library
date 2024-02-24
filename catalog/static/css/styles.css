@@ -1,0 +1,17 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+header , footer { 
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    background-color: black;
+    color: rgb(0, 124, 232);
+    box-shadow: inset 5px 5px 200px 2px lightblue ;
+}
+

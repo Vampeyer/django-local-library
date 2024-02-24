@@ -1,0 +1,123 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fmodern\fprq1\fcharset0 Liberation Mono{\*\falt Courier New};}{\f5\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 NSimSun;}{\f7\fmodern\fprq1\fcharset0 NSimSun;}{\f8\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f9\fnil\fprq2\fcharset0 Arial;}{\f10\fswiss\fprq0\fcharset128 Arial;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red144\green247\blue143;\red0\green169\blue51;\red255\green255\blue166;}
+{\stylesheet{\s0\snext0\rtlch\af9\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af6\langfe2052 Normal;}
+{\s4\sbasedon17\snext18\rtlch\af9\afs24\ab \ltrch\hich\af3\loch\ilvl3\outlinelevel3\sb120\sa120\keepn\f3\fs24\b\dbch\af6 Heading 4;}
+{\*\cs15\snext15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7 Source Text;}
+{\*\cs16\snext16\loch\cf9\ul\ulc0 Hyperlink;}
+{\s17\sbasedon0\snext18\rtlch\af9\afs28 \ltrch\hich\af5\loch\sb240\sa120\keepn\f5\fs28\dbch\af8 Heading;}
+{\s18\sbasedon0\snext18\loch\sl276\slmult1\sb0\sa140 Body Text;}
+{\s19\sbasedon18\snext19\rtlch\af10 \ltrch\loch\sl276\slmult1\sb0\sa140 List;}
+{\s20\sbasedon0\snext20\rtlch\af10\afs24\ai \ltrch\loch\sb120\sa120\noline\fs24\i Caption;}
+{\s21\sbasedon0\snext21\rtlch\af10 \ltrch\loch\noline Index;}
+{\s22\sbasedon0\snext22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7 Preformatted Text;}
+}{\*\generator LibreOffice/7.6.4.1$Windows_X86_64 LibreOffice_project/e19e193f88cd6c0525a17fb7a176ed8e6a3e2aa1}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr2024\mo2\dy14\hr9\min26}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab709
+\hyphauto1\viewscale90\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+To migrate a Django site from SQLite to PostgreSQL, you can follow these steps:}
+\par \pard\plain \s4\rtlch\af9\afs24\ab \ltrch\hich\af3\loch\ilvl3\outlinelevel3\sb120\sa120\keepn\f3\fs24\b\dbch\af6\ql\fi0\li0\lin0\ri0\rin0\sb0\sa140\ltrpar{\loch
+Step 1: Dump SQLite Data}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+First, you need to }{\loch\chcbpat19\loch
+dump all the data from the SQLite database using the }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chcbpat19\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+dumpdata}{\loch\chcbpat19\loch
+ }{\loch
+command. This will create a JSON file containing all the data from your SQLite database.}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chcbpat7\loch
+python manage.py dumpdata > datadump.json}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{{\field{\*\fldinst HYPERLINK "https://studygyaan.com/django/migrate-data-from-sqlite-to-postgresql-mysql-in-django" }{\fldrslt {\loch\loch\cf9\ul\ulc0\loch
+1}}}}
+\par \pard\plain \s4\rtlch\af9\afs24\ab \ltrch\hich\af3\loch\ilvl3\outlinelevel3\sb120\sa120\keepn\f3\fs24\b\dbch\af6\ql\fi0\li0\lin0\ri0\rin0\sb0\sa140\ltrpar{\loch
+Step 2: Configure PostgreSQL in settings.py}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+Next, you need to configure your Django project to use PostgreSQL as the database backend. Open your }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chcbpat19\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+settings.py}{\loch
+ file and update the }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+DATABASES}{\loch
+ setting with the PostgreSQL configuration. Here's an example:}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\loch
+DATABASES = \{}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18
+    }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18\loch
+'default': \{}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18
+        }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18\loch
+'ENGINE': 'django.db.backends.postgresql',}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18
+        }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18\loch
+'NAME': 'your_database_name',}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18
+        }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18\loch
+'USER': 'your_username',}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18
+        }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18\loch
+'PASSWORD': 'your_password',}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18
+        }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18\loch
+'HOST': 'your_host',}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18
+        }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\cf18\loch
+'PORT': 'your_port',}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7
+    }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\loch
+\}}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\loch
+\}}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+Make sure to replace }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+'your_database_name'}{\loch
+, }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+'your_username'}{\loch
+, }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+'your_password'}{\loch
+, }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+'your_host'}{\loch
+, and }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+'your_port'}{\loch
+ with the appropriate values for your PostgreSQL database. }{{\field{\*\fldinst HYPERLINK "https://simpleit.rocks/python/django/migrate-django-sqlite-to-postgresql/" }{\fldrslt {\loch\loch\cf9\ul\ulc0\loch
+2}}}}
+\par \pard\plain \s4\rtlch\af9\afs24\ab \ltrch\hich\af3\loch\ilvl3\outlinelevel3\sb120\sa120\keepn\f3\fs24\b\dbch\af6\ql\fi0\li0\lin0\ri0\rin0\sb0\sa140\ltrpar{\loch
+Step 3: Migrate Database}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+Now that you have configured the Django settings, you can go ahead and migrate your data to the PostgreSQL database. Run the following commands:}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chcbpat7\loch
+python manage.py migrate}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+This will apply any pending database migrations and create the necessary tables in the PostgreSQL database. }{{\field{\*\fldinst HYPERLINK "https://sweetcode.io/django-postgresql-migration-from-sqlite/" }{\fldrslt {\loch\loch\cf9\ul\ulc0\loch
+3}}}}
+\par \pard\plain \s4\rtlch\af9\afs24\ab \ltrch\hich\af3\loch\ilvl3\outlinelevel3\sb120\sa120\keepn\f3\fs24\b\dbch\af6\ql\fi0\li0\lin0\ri0\rin0\sb0\sa140\ltrpar{\loch
+Step 4: Load Data into PostgreSQL}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+Finally, you can load the data from the SQLite dump file into the PostgreSQL database using the }{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chcbpat19\chbrdr\brdrhair\brdrw1\brdrcf1\brsp28\loch
+loaddata}{\loch\chcbpat19\loch
+ }{\loch
+command. Run the following command:}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch\cs15\rtlch\af4 \ltrch\hich\af4\loch\f4\dbch\af7\chcbpat7\loch
+python manage.py loaddata datadump.json}
+\par \pard\plain \s22\rtlch\af4\afs20 \ltrch\hich\af4\loch\sb0\sa0\f4\fs20\dbch\af7\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+This will import the data from the SQLite dump file into the PostgreSQL database.}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar\loch
+
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+That's it! Your Django site should now be using PostgreSQL as the database backend. Make sure to test your site thoroughly to ensure that everything is working as expected.}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+Note: Before performing any database migration, it's always a good practice to create a backup of your data to avoid any potential data loss.}
+\par \pard\plain \s18\loch\sl276\slmult1\sb0\sa140\ql\fi0\li0\lin0\ri0\rin0\sb0\sa0\ltrpar{\loch
+I hope this helps! Let me know if you have any further questions.}
+\par \pard\plain \s0\rtlch\af9\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af6\langfe2052\ql\ltrpar\loch
+
+\par }
